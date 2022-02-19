@@ -1,0 +1,51 @@
+@import 'columnsvar.scss';
+
+body {
+    font-size: 15px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.card-1, .card-2, .card-3 {
+    max-width: 278px;
+    color: $white;
+    padding: 3rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem 0;
+}
+
+.card-1 button:hover, .card-2 button:hover, .card-3 button:hover {
+    background-color: transparent !important;
+    color: #fff;
+}
+
+.card-1 button {
+    border: 1px solid #fff !important;
+    color: $brightOrange;
+}
+
+.card-2 button {
+    color: $darkCyan;
+    border: 1px solid #fff !important;
+}
+
+.card-3 button {
+    border: 1px solid #fff !important;
+    color: $veryDarkCyan;
+}
+
+.card-1 {
+    background-color: $brightOrange;
+}
+.card-2 {
+    background-color: $darkCyan;
+}
+.card-3 {
+    background-color: $veryDarkCyan;
+}

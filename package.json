@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass:p-1": "sass --watch ./sass/styles.scss ./public/styles/styles.css"
+    "sass:p-1": "sass --watch ./sass/styles.scss ./public/styles/styles.css",
+    "sass:p-2": "sass --watch ./sass/columns.scss ./public/styles/columns.css"
   },
   "keywords": [],
   "author": "",
