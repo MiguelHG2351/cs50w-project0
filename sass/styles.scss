@@ -1,5 +1,88 @@
+@import 'stylevar.scss';
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: $veryDarkBlue;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-site {
     background-color: #f5f5f5;
     padding: 20px;
     border-bottom: 1px solid #e5e5e5;
+}
+
+.card {
+    background-color: $veryDarkBlue2;
+    padding: 1.25rem;
+    max-width: 375px;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    .card-image {
+        text-align: center;
+
+        & img {
+            width: calc(100% - 1.25rem);
+            height: auto;
+        }
+    }
+
+    .card-content {
+        .card-title {
+            & h1 {
+                color: $white;
+                font-weight: 600;
+            }
+            & p {
+                font-weight: 400;
+                font-size: 16px;
+                color: $softBlue;
+            }
+        }
+
+        .card-info {
+            display: flex;
+            justify-content: space-between;
+
+            .pricing i, .time-ago i {
+                vertical-align: middle;
+            }
+
+            .pricing {
+                text-transform: uppercase;
+                font-weight: 600;
+                color: $cyan;
+            }
+    
+            .time-ago {
+                color: $softBlue;
+            }
+        }
+
+    }
+    .card-footer {
+        display: flex;
+        align-items: center;
+        gap: 0 12px;
+        border-top: .2px solid $veryDarkBlue3;
+
+        & img {
+            width: 48px;
+        }
+
+        & p {
+            color: $softBlue;
+            & span {
+                color: $white;
+            }
+        }
+    }
 }
