@@ -1,5 +1,9 @@
 @import 'columnsvar.scss';
 
+%borders {
+    border: 1px solid #fff !important;
+}
+
 body {
     font-size: 15px;
 }
@@ -26,17 +30,17 @@ body {
 }
 
 .card-1 button {
-    border: 1px solid #fff !important;
+    @extend %borders;
     color: $brightOrange;
 }
 
 .card-2 button {
     color: $darkCyan;
-    border: 1px solid #fff !important;
+    @extend %borders;
 }
 
 .card-3 button {
-    border: 1px solid #fff !important;
+    @extend %borders;
     color: $veryDarkCyan;
 }
 

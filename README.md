@@ -71,3 +71,23 @@ You can use any tools you like to help you complete the challenge. So if you've 
 # Deploy
 
 ![Prueba](https://pset0.miguel2351.me/frontendmentor/pages.png)
+
+# Donde se aplica los requerimientos
+
+1. Ya estan las 4 páginas
+
+2. La última página tiene tablas y listas y 3 tienen imágenes
+
+3. Tiene 3 hojas de estilos .css
+
+4. Propiedades: color, background, border, padding, margin y más.
+
+4.1 Selectores: Atributo, clase, responsive, id, etiqueta
+
+5. Se aplico responsive en la página de login y first mobile
+
+6. En el columns.html se usan componentes, y grids
+
+7. Hay muchas variables css, anidamiento y herencia
+
+8. Fin
