@@ -1,0 +1,120 @@
+@import 'loginvar.scss';
+
+main {
+    padding: 1.25rem;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    background-color: $red;
+    background-image: url('/public/images/bg-intro-mobile.png');
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Poppins, sans-serif;
+}
+
+.presentation {
+    color: #fff;
+
+    & h1 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+}
+
+.message {
+    background-color: $blue;
+    padding: .25rem;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    border-bottom: 5px solid rgba($color: $grayishBlue, $alpha: .5);
+    margin-bottom: 1rem;
+    text-align: center;
+    
+    & span {
+        font-weight: 400;
+    }
+}
+
+#form {
+    background-color: #fff;
+    padding: 20px 0;
+    border-radius: 6px;
+
+    input {
+        box-sizing: border-box;
+        width: 90%;
+        padding: 1rem;
+        border-radius: 4px;
+        border: 1px solid $grayishBlue;
+
+        &::placeholder {
+            font-weight: 700;
+        }
+    }
+    
+    input + input {
+        margin-top: .75rem;
+    }
+
+    .end-form {
+        padding: 1rem;
+        box-sizing: border-box;
+
+        
+        & button {
+            cursor: pointer;
+            box-sizing: border-box;
+            text-transform: uppercase;
+            padding: 1rem 0;
+            width: 100%;
+            background-color: $green;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            color: #fff;
+            border-bottom: 4px solid rgba($color: #000, $alpha: .2);
+        }
+
+        & p {
+            color: $grayishBlue;
+
+            & a {
+                color: $blue;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    body {
+        text-align: left;
+    }
+    
+    #form {
+        text-align: center;
+    }
+    
+    main {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        gap: 5rem;
+        align-items: center;
+    }
+}
+
+input[type=text]:valid {
+    border: 1px solid $red !important;
+}
+
+// - Mobile: 375px
+// - Desktop: 1440px
+

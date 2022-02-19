@@ -1,0 +1,104 @@
+main {
+  padding: 1.25rem;
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  background-color: #ff7a7a;
+  background-image: url("/public/images/bg-intro-mobile.png");
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Poppins, sans-serif;
+}
+
+.presentation {
+  color: #fff;
+}
+.presentation h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.message {
+  background-color: #6055a5;
+  padding: 0.25rem;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  border-bottom: 5px solid rgba(185, 182, 211, 0.5);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.message span {
+  font-weight: 400;
+}
+
+#form {
+  background-color: #fff;
+  padding: 20px 0;
+  border-radius: 6px;
+}
+#form input {
+  box-sizing: border-box;
+  width: 90%;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid #b9b6d3;
+}
+#form input::placeholder {
+  font-weight: 700;
+}
+#form input + input {
+  margin-top: 0.75rem;
+}
+#form .end-form {
+  padding: 1rem;
+  box-sizing: border-box;
+}
+#form .end-form button {
+  cursor: pointer;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  width: 100%;
+  background-color: #38cc8c;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #fff;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+}
+#form .end-form p {
+  color: #b9b6d3;
+}
+#form .end-form p a {
+  color: #6055a5;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    text-align: left;
+  }
+
+  #form {
+    text-align: center;
+  }
+
+  main {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+    align-items: center;
+  }
+}
+input[type=text]:valid {
+  border: 1px solid #ff7a7a !important;
+}
+
+/*# sourceMappingURL=login.css.map */
