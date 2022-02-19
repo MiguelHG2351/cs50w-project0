@@ -13,12 +13,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="../public/styles/login.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <button class="btnSidenav" id="btnSidenav">
+      <i class="material-icons">menu</i>
+    </button>
+    <section class="sidenav">
+      <ul class="list-sidenav">
+        <li><a href="./index.html">NFT</a></li>
+        <li><a href="./column.html">Column</a></li>
+        <li><a href="./login.html">Here</a></li>
+        <li><a href="./ultima.html">Ultima</a></li>
+      </ul>
+    </section>
     <main>
       <section class="presentation">
         <h1>Learn to code by watching others</h1>
@@ -50,10 +62,15 @@
     <script>
         const $form = document.querySelector('#form');
         const inputs = document.querySelectorAll("input:not([type='submit'])");
-        
+        const $btn = document.querySelector('#btnSidenav');
+        const $sidenav = document.querySelector('.sidenav');
         
         $form.addEventListener('submit', (e) => {
             e.preventDefault();
+        });
+
+        $btn.addEventListener('click', (e) => {
+            $sidenav.classList.toggle('active');
         });
         
         // Me dio pereza probar esto

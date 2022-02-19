@@ -4,6 +4,8 @@ Las páginas son basadas en:
 
 [FrontEnd Mentor](https://www.frontendmentor.io/)
 
+De esta página busque diseños y los pase a html, css
+
 # Paginas:
 
 # Frontend Mentor - NFT preview card component
@@ -74,7 +76,7 @@ You can use any tools you like to help you complete the challenge. So if you've 
 
 # Donde se aplica los requerimientos
 
-1. Ya estan las 4 páginas
+1. Ya estan las 4 páginas y estan conectadas
 
 2. La última página tiene tablas y listas y 3 tienen imágenes
 
@@ -91,3 +93,7 @@ You can use any tools you like to help you complete the challenge. So if you've 
 7. Hay muchas variables css, anidamiento y herencia
 
 8. Fin
+
+# Extra
+
+En la carpeta `frontendmentor` se encuentra la información de fuentes, diseño, etc.

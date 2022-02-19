@@ -10,8 +10,20 @@
     <link rel="stylesheet" href="../public/styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../public/favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+    <button class="btnSidenav" id="btnSidenav">
+        <i class="material-icons">menu</i>
+      </button>
+      <section class="sidenav">
+        <ul class="list-sidenav">
+          <li><a href="./index.html">Here</a></li>
+          <li><a href="./column.html">Column</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./ultima.html">Ultima</a></li>
+        </ul>
+    </section>
     <div class="card">
         <div class="card-image">
             <img src="../public/images/image-equilibrium.jpg" alt="equilibrium NFT">
@@ -41,5 +53,13 @@
             <p>Creation of <span>Jules Wyvern</span></p>
         </div>
     </div>
+    <script>
+        const $btn = document.querySelector('#btnSidenav');
+        const $sidenav = document.querySelector('.sidenav');
+        
+        $btn.addEventListener('click', (e) => {
+            $sidenav.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
