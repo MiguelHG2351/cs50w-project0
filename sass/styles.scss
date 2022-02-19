@@ -74,12 +74,15 @@ body {
     max-width: 375px;
     overflow: hidden;
     box-sizing: border-box;
+    border-radius: 10px;
 
     .card-image {
         text-align: center;
+        border-radius: 1rem;
+        overflow: hidden;
 
         & img {
-            width: calc(100% - 1.25rem);
+            width: 100%;
             height: auto;
         }
     }
@@ -125,6 +128,8 @@ body {
 
         & img {
             width: 48px;
+            border-radius: 50%;
+            border: 1px solid #fff;
         }
 
         & p {
