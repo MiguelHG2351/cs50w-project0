@@ -16,7 +16,7 @@
     <button class="btnSidenav" id="btnSidenav">
         <i class="material-icons">menu</i>
       </button>
-      <section class="sidenav">
+    <section class="sidenav">
         <ul class="list-sidenav">
           <li><a href="./index.html">Here</a></li>
           <li><a href="./column.html">Column</a></li>
@@ -25,35 +25,134 @@
         </ul>
     </section>
     <main>
-        <div class="card">
-            <div class="card-image">
-                <img src="../public/images/image-equilibrium.jpg" alt="equilibrium NFT">
-            </div>
-            <div class="card-content">
-                <div class="card-title">
-                    <h1>Equilibrium #3429</h1>
-                    <p>Our Equilibrium collection promotes balance and calm</p>
+        <section class="container">
+            <section class="profile">
+                <div class="user">
+                    <div class="user-image">
+                        <img width="64px" src="../public/images/image-jeremy.png" alt="Jeremy">
+                    </div>
+                    <div class="user-description">
+                        <p>Report for</p>
+                        <span>Jeremy Robson</span>
+                    </div>
                 </div>
-                <div class="card-info">
-                    <p class="pricing">
-                        <i>
-                            <img src="../public/images/icon-ethereum.svg" alt="Ehtereum">
-                        </i>
-                        0.041eth
-                    </p>
-                    <p class="time-ago">
-                        <i>
-                            <img src="../public/images/icon-clock.svg" alt="Ehtereum">
-                        </i>
-                        3 days left
-                    </p>
+                <ul class="actions">
+                   <li>
+                       <a href="#">Daily</a>
+                   </li>
+                   <li>
+                       <a class="active" href="#">Weekly</a>
+                   </li>
+                   <li>
+                       <a href="#">Monthly</a>
+                   </li> 
+                </ul>
+            </section>
+            <section class="time-tracking">
+                <div class="time-card">
+                    <div class="header-time">
+                        <img src="../public/images/icon-work.svg" alt="test">
+                    </div>
+                    <div class="header-time-info">
+                        <div class="time-menu">
+                            <h3>Work</h3>
+                            <p>32hrs</p>
+                        </div>
+                        <div class="time-data">
+                            <i>
+                                <img src="../public/images/icon-ellipsis.svg" alt="options">
+                            </i>
+                            <p>Last week - 36hrs</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card-footer">
-                <img src="../public/images/image-avatar.png" alt="Jules Wyvern">
-                <p>Creation of <span>Jules Wyvern</span></p>
-            </div>
-        </div>
+                <div class="time-card">
+                    <div class="header-time">
+                        <img src="../public/images/icon-play.svg" alt="test">
+                    </div>
+                    <div class="header-time-info">
+                        <div class="time-menu">
+                            <h3>Play</h3>
+                            <p>10hrs</p>
+                        </div>
+                        <div class="time-data">
+                            <i>
+                                <img src="../public/images/icon-ellipsis.svg" alt="options">
+                            </i>
+                            <p>Last week - 8hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-card">
+                    <div class="header-time">
+                        <img src="../public/images/icon-study.svg" alt="test">
+                    </div>
+                    <div class="header-time-info">
+                        <div class="time-menu">
+                            <h3>Study</h3>
+                            <p>4hrs</p>
+                        </div>
+                        <div class="time-data">
+                            <i>
+                                <img src="../public/images/icon-ellipsis.svg" alt="options">
+                            </i>
+                            <p>Last week - 7hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-card">
+                    <div class="header-time">
+                        <img src="../public/images/icon-exercise.svg" alt="test">
+                    </div>
+                    <div class="header-time-info">
+                        <div class="time-menu">
+                            <h3>Excercise</h3>
+                            <p>4hrs</p>
+                        </div>
+                        <div class="time-data">
+                            <i>
+                                <img src="../public/images/icon-ellipsis.svg" alt="options">
+                            </i>
+                            <p>Last week - 5hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-card">
+                    <div class="header-time">
+                        <img src="../public/images/icon-social.svg" alt="test">
+                    </div>
+                    <div class="header-time-info">
+                        <div class="time-menu">
+                            <h3>Social</h3>
+                            <p>5hrs</p>
+                        </div>
+                        <div class="time-data">
+                            <i>
+                                <img src="../public/images/icon-ellipsis.svg" alt="options">
+                            </i>
+                            <p>Last week - 10hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-card">
+                    <div class="header-time">
+                        <img src="../public/images/icon-self-care.svg" alt="test">
+                    </div>
+                    <div class="header-time-info">
+                        <div class="time-menu">
+                            <h3>Self Care</h3>
+                            <p>2hrs</p>
+                        </div>
+                        <div class="time-data">
+                            <i>
+                                <img src="../public/images/icon-ellipsis.svg" alt="options">
+                            </i>
+                            <p>Last week - 2hrs</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
     </main>
     <script>
         const $btn = document.querySelector('#btnSidenav');
